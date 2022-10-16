@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/Users/Darren/.local/share/nvim/site/pack/packer/start/Colorschemes",
     url = "https://github.com/lunarvim/Colorschemes"
   },
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/Darren/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/Darren/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -169,6 +174,11 @@ _G.packer_plugins = {
     path = "/Users/Darren/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/Users/Darren/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/Darren/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -218,6 +228,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/Darren/.local/share/nvim/site/pack/packer/start/vim-perforce",
     url = "https://github.com/nfvs/vim-perforce"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/Users/Darren/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 

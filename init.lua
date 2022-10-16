@@ -9,6 +9,8 @@ require "user.toggleterm-config"
 require "user.treesitter-config"
 require "user.telescope-config"
 require "user.lsp"
+require "user.whichkey-config"
+require "user.comment-config"
 
 vim.cmd "colorscheme darcula-solid"
 

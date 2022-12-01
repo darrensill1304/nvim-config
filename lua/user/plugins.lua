@@ -45,14 +45,18 @@ return packer.startup(function(use)
 	use({ "wbthomason/packer.nvim", commit = "00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" }) -- Have packer manage itself
 	use({ "nvim-lua/plenary.nvim", commit = "968a4b9afec0c633bc369662e78f8c5db0eba249" }) -- Useful lua functions used by lots of plugins
   use({ 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }})
-  use({'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'})
-  use({ "easymotion/vim-easymotion" })
+  use({ 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'})
+  use({ "phaazon/hop.nvim" })
   use({ "ryanoasis/vim-devicons" })
   use({ "nfvs/vim-perforce" })
   use({ "BurntSushi/ripgrep" })
   use({ "nvim-telescope/telescope.nvim", tag="0.1.0" })
-  use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }}
+  use({ 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons', }})
   use({ "akinsho/toggleterm.nvim", tag="*"})
+  use({ "mhinz/vim-signify"})
+
+  -- Alpha (Home Screen)
+  use({ "goolord/alpha-nvim", requires = { "kyazdani42/nvim-web-devicons" } })
 
   -- Completion
   use "hrsh7th/nvim-cmp"    -- Completion Plugin
@@ -73,6 +77,8 @@ return packer.startup(function(use)
   use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
   use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "a2e8476af3f3e993bb0d6477438aad3096512e42" }
+  use { "windwp/nvim-ts-autotag" }
+  use { "windwp/nvim-autopairs" }
 
   -- Commenting
   use { 'numToStr/Comment.nvim' }
@@ -83,6 +89,7 @@ return packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		commit = "5d11dfc27849e3d7435c32dbd8ea9be35bcd990b",
 	})
+  use({ "p00f/nvim-ts-rainbow"})
 
   -- Which Key
   use { "folke/which-key.nvim" }

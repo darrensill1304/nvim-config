@@ -45,7 +45,8 @@ keymap("v", ">", ">gv", opts)
 ------------------------------------------------------
 ------------------- Plugin Mappings ------------------
 ------------------------------------------------------
-
+-- Telescope
+keymap("n", "<leader>gr", "<cmd>lua require('telescope.builtin').lsp_references(require('telescope.themes').get_ivy{previewer=false,show_line=false})<CR>", opts)
 
 -- NvimTree
 keymap("n", "<leader>fn", "<cmd>NvimTreeFindFile<CR>", opts)

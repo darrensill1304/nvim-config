@@ -11,6 +11,10 @@ require "user.telescope-config"
 require "user.lsp"
 require "user.whichkey-config"
 require "user.comment-config"
+require "user.alpha-config"
+require "user.hop-config"
+require "user.autopairs-config"
+require "user.autotag-config"
 
 vim.cmd "colorscheme darcula-solid"
 
